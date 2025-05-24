@@ -11,9 +11,6 @@
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: none;
-}
 
 html,
 body {
@@ -86,10 +83,6 @@ a {
   list-style: none;
 }
 /* 
-4
-3
-2
-1
 */
 .container-header {
   display: flex;
