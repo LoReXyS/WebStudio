@@ -75,14 +75,17 @@ h6 {
   font-size: inherit;
   line-height: 1;
 }
+
 ul,
 ol {
   list-style: none;
 }
+
 a {
   list-style: none;
 }
-/* 
+
+/*
 */
 .container-header {
   display: flex;
@@ -92,6 +95,7 @@ a {
   align-items: center;
   margin: 25px;
 }
+
 .h1txt {
   font-family: Raleway;
   font-size: 26px;
@@ -101,6 +105,7 @@ a {
   text-align: left;
   color: rgb(33, 150, 243);
 }
+
 .nextH1txt {
   font-family: Raleway;
   font-size: 26px;
@@ -110,10 +115,12 @@ a {
   text-align: left;
   color: rgb(0, 0, 0);
 }
+
 .list-first {
   display: flex;
   align-items: flex-end;
 }
+
 .a-item-first-list {
   color: rgb(33, 33, 33);
   font-family: Roboto;
@@ -127,9 +134,11 @@ a {
 .a-item-fisrt-list:hover {
   color: rgb(33, 150, 243);
 }
+
 .item-fisrt-list {
   margin-left: 15px;
 }
+
 /*  hero */
 .hero {
   background-image: url(./imgs/pc/backgroundimmage.png);
@@ -138,6 +147,7 @@ a {
   background-size: cover;
   background-position: center;
 }
+
 .hero {
   width: 100%;
   height: 600px;
@@ -145,6 +155,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+
 .herotxt {
   color: rgb(255, 255, 255);
   font-family: Roboto;
@@ -155,6 +166,7 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
+
 .herobutton {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -168,19 +180,23 @@ a {
   letter-spacing: 6%;
   text-align: center;
 }
+
 .containerhero {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 /* list */
 .container-list {
   margin: 115px;
 }
+
 .stylelist {
   display: flex;
   margin-left: 120px;
 }
+
 .styleforimg {
   border-radius: 4px;
 
@@ -188,10 +204,12 @@ a {
   width: 270px;
   height: 120px;
 }
+
 .imaglist {
   margin-left: 40%;
   margin-top: 10%;
 }
+
 .txtlist {
   color: rgb(33, 33, 33);
   font-family: Roboto;
@@ -205,6 +223,7 @@ a {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 .ptxtlist {
   color: rgb(117, 117, 117);
   font-family: Roboto;
@@ -215,6 +234,7 @@ a {
   text-align: left;
   max-width: 45%;
 }
+
 /* about us */
 .txtUs {
   color: rgb(33, 33, 33);
@@ -225,6 +245,7 @@ a {
   letter-spacing: 3%;
   text-align: center;
 }
+
 .content-us {
   color: rgb(255, 255, 255);
   font-family: Roboto;
@@ -241,18 +262,21 @@ a {
   justify-content: center;
   align-items: flex-end;
 }
+
 .us-first {
   background-image: url(./imgs/aboutus/imgnotbook.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .us-second {
   background-image: url(./imgs/aboutus/imgphonenootbok.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .us-third {
   background-image: url(./imgs/aboutus/imgthirdimg.png);
   background-size: cover;
@@ -265,9 +289,11 @@ a {
   flex-direction: row;
   justify-content: center;
 }
+
 .content-us:not(:last-child) {
   margin-right: 26px;
 }
+
 .span-txt {
   background: rgba(47, 48, 58, 0.8);
 }
