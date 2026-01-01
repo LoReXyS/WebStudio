@@ -56,15 +56,10 @@ a:hover {
 
 .container {
   max-width: 1200px;
-  /* Sets the maximum width of the content area */
   margin: 0 auto;
-  /* Horizontally centers the container */
   padding: 0 20px;
-  /* Adds left/right padding inside the container */
   width: 100%;
-  /* Ensures it takes full available width up to the max-width */
   box-sizing: border-box;
-  /* Includes padding in width calculation */
 }
 
 ul,
@@ -130,4 +125,269 @@ a {
 .list-first {
   display: flex;
   gap: 32px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  padding: 24px 0 24px 0;
+}
+.img-header {
+  margin-top: 2px;
+}
+/* hero */
+.hero {
+  /* Img */
+  width: 100%;
+  height: 600px;
+  background-image: url(./imgs/pc/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.herotxt {
+  color: rgba(255, 255, 255, 1);
+  font-family: Roboto;
+  font-style: Black;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 6%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.herobutton {
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 6%;
+  text-align: center;
+
+  border-radius: 4px;
+
+  background-color: rgba(33, 150, 243, 1);
+  padding: 10px 29px 10px 29px;
+}
+.hero-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+/* list */
+.list {
+  margin-top: 84px;
+}
+.txtlist {
+  color: rgba(33, 33, 33, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.ptxtlist {
+  color: rgba(117, 117, 117, 1);
+
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: left;
+}
+.styleforimg {
+  /* Rectangle 3 */
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: rgba(245, 244, 250, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.stylelist {
+  display: flex;
+  gap: 40px;
+}
+/* about us  */
+.aboutUs {
+  margin-top: 120px;
+}
+.txtUs {
+  color: rgba(33, 33, 33, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 3%;
+  text-align: center;
+}
+.span-txt {
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.content-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.content-span {
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.us-first {
+  background-image: url(./imgs/pc/aboutus1.png);
+  background-size: cover;
+  background-position: center;
+  width: 370px;
+  height: 294px;
+}
+.us-second {
+  background-image: url(./imgs/pc/aboutus2.png);
+  background-size: cover;
+  background-position: center;
+  width: 370px;
+  height: 294px;
+}
+.us-third {
+  background-image: url(./imgs/pc/aboutus3.png);
+  background-size: cover;
+  background-position: center;
+  width: 370px;
+  height: 294px;
+}
+.list-us {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+}
+/* team */
+.team {
+  margin-top: 120px;
+  background: rgba(245, 244, 250, 1);
+  padding: 94px 0 94px 0;
+}
+.team-h2 {
+  color: rgba(33, 33, 33, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 3%;
+  text-align: center;
+}
+.h2-team-list {
+  color: rgba(33, 33, 33, 1);
+
+  font-family: Roboto;
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 3%;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.p-team-list {
+  color: rgba(117, 117, 117, 1);
+
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 3%;
+  text-align: center;
+}
+.list-item {
+  /* card bg */
+  width: 270px;
+  height: 428px;
+  border-radius: 0px 0px 4px 4px;
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-start; */
+  gap: 16px;
+}
+.img-team {
+  /* img */
+  width: 270px;
+  height: 260px;
+}
+.team-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.list-team {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 24px;
+}
+.nav-team {
+  margin-top: 32px;
+}
+/* clients */
+.clients {
+  margin-top: 120px;
+}
+.h2-clients {
+  color: rgba(33, 33, 33, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 3%;
+  text-align: center;
 }
