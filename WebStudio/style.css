@@ -391,3 +391,122 @@ a {
   letter-spacing: 3%;
   text-align: center;
 }
+.clients-item {
+  /* Rectangle 9 */
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 90px;
+}
+/* footer */
+.footer {
+  background-color: rgba(47, 48, 58, 1);
+}
+.nextH1txt2 {
+  color: rgba(255, 255, 255, 1);
+}
+.adress-footer {
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: left;
+}
+.link-to {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: Roboto;
+  font-style: Regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 3%;
+  text-align: left;
+}
+.h2-join {
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.last-txt {
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 60px 0;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+}
+.li-footer {
+  margin-bottom: 5px;
+}
+.li-footer:first-child {
+  margin-bottom: 20px;
+}
+.input-last {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  padding: 10px 25px 10px 15px;
+}
+.item-last {
+  margin-bottom: 20px;
+}
+.btn-last {
+  background-color: rgba(33, 150, 243, 1);
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 6%;
+  text-align: center;
+  padding: 5px 25px 5px 15px;
+}
+.div-footer {
+  display: flex;
+  gap: 16px;
+}
+.footer-join {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
