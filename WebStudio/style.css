@@ -214,7 +214,7 @@ a {
 }
 .styleforimg {
   /* Rectangle 3 */
-  width: 270px;
+  /* width: 270px; */
   height: 120px;
   border-radius: 4px;
   background: rgba(245, 244, 250, 1);
@@ -343,8 +343,8 @@ a {
 }
 .list-item {
   /* card bg */
-  width: 270px;
-  height: 428px;
+  width: 250px;
+  height: 410px;
   border-radius: 0px 0px 4px 4px;
   /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -363,8 +363,7 @@ a {
 }
 .team-list {
   display: flex;
-  gap: 40px;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 40px;
 }
 .list-team {
@@ -513,16 +512,25 @@ a {
 /* modal */
 .modal {
   opacity: 0;
-  position: absolute;
-  z-index: 1;
+  pointer-events: none;
+  position: fixed; /* КРАЩЕ ніж absolute */
+  z-index: 10;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.95);
   width: 528px;
   height: 581px;
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+/* коли модалка відкрита */
+.modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .p-modal {
   color: rgba(117, 117, 117, 1);
 
@@ -604,4 +612,434 @@ a {
   border-radius: 4px;
   width: 448px;
   height: 40px;
+}
+/* adaptation */
+
+/* Планшеты (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Header для планшетов */
+  .header-nav {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .h1txt {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .list-first:first-of-type {
+    order: 2;
+    gap: 20px;
+  }
+
+  .list-first:last-of-type {
+    order: 3;
+    gap: 20px;
+  }
+
+  /* Hero секция для планшетов */
+  .hero {
+    height: 400px;
+  }
+
+  .herotxt {
+    font-size: 36px;
+    line-height: 48px;
+    padding: 0 20px;
+  }
+
+  /* Features секция для планшетов */
+  .stylelist {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .item-list {
+    width: calc(50% - 15px);
+  }
+
+  .styleforimg {
+    height: 100px;
+  }
+
+  /* About Us секция для планшетов */
+  .list-us {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .content-us {
+    width: calc(50% - 15px);
+  }
+
+  .us-first,
+  .us-second,
+  .us-third {
+    width: 100%;
+    height: 250px;
+  }
+
+  .content-span {
+    width: 100%;
+  }
+
+  /* Team секция для планшетов */
+  .team-list {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .list-item {
+    /* width: calc(50% - 15px); */
+    max-width: 300px;
+  }
+
+  .img-team {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Clients секция для планшетов */
+  .clients-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .clients-item {
+    width: calc(33.333% - 14px);
+  }
+
+  /* Footer для планшетов */
+  .container-footer {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-list,
+  .footer-join,
+  .footer-last {
+    width: 100%;
+    align-items: center;
+  }
+  .footer-last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .li-footer {
+    text-align: center;
+  }
+
+  .footer-join-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-footer {
+    justify-content: center;
+  }
+
+  /* Modal для планшетов */
+  .modal {
+    width: 90%;
+    max-width: 528px;
+    height: auto;
+    min-height: 581px;
+  }
+
+  .input-modal,
+  .input-modal-chekbox {
+    width: 100%;
+  }
+
+  .list-modal {
+    padding: 15px;
+  }
+}
+
+/* Мобильные устройства (до 767px) */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  /* Header для мобильных */
+  .header-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .h1txt {
+    text-align: center;
+    order: 1;
+  }
+
+  .list-first {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .list-first:first-of-type {
+    order: 2;
+  }
+
+  .list-first:last-of-type {
+    order: 3;
+  }
+
+  .item-fisrt-list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .item-fisrt-list form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Hero секция для мобильных */
+  .hero {
+    height: 300px;
+    padding: 20px 10px;
+  }
+
+  .herotxt {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .herobutton {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  /* Features секция для мобильных */
+  .stylelist {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .item-list {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .styleforimg {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .txtlist,
+  .ptxtlist {
+    text-align: center;
+  }
+
+  /* About Us секция для мобильных */
+  .txtUs {
+    font-size: 28px;
+  }
+
+  .list-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-us {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .us-first,
+  .us-second,
+  .us-third {
+    height: 200px;
+  }
+
+  /* Team секция для мобильных */
+  .team {
+    padding: 60px 0;
+    margin-top: 60px;
+  }
+
+  .team-h2 {
+    font-size: 28px;
+  }
+
+  .team-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .list-item {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  /* Clients секция для мобильных */
+  .clients {
+    margin-top: 60px;
+  }
+
+  .h2-clients {
+    font-size: 28px;
+  }
+
+  .clients-list {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .clients-item {
+    width: calc(50% - 8px);
+  }
+
+  .img-clients {
+    max-width: 80%;
+  }
+
+  /* Footer для мобильных */
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    gap: 40px;
+  }
+
+  .footer-list,
+  .footer-join,
+  .footer-last {
+    align-items: center;
+  }
+
+  .li-footer {
+    text-align: center;
+  }
+
+  .footer-join {
+    gap: 20px;
+  }
+
+  .input-last {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .btn-last {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* Modal для мобильных */
+  .modal {
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .h2-modal {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .checkbox-modal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .p-modal-checkbox {
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .btn-modal-x {
+    top: 10px;
+    left: calc(100% - 40px);
+    background: rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Очень маленькие экраны (до 479px) */
+@media screen and (max-width: 479px) {
+  .herotxt {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .txtUs,
+  .team-h2,
+  .h2-clients {
+    font-size: 24px;
+  }
+
+  .us-first,
+  .us-second,
+  .us-third {
+    height: 150px;
+  }
+
+  .content-span {
+    height: 50px;
+  }
+
+  .span-txt {
+    font-size: 12px;
+  }
+
+  .clients-item {
+    width: calc(50% - 5px);
+    height: 70px;
+  }
+
+  .input-modal,
+  .input-modal-chekbox {
+    width: 100%;
+  }
+
+  .btn-modal {
+    width: 100%;
+  }
+}
+
+/* Медиа-запрос для высоких экранов и ландшафтной ориентации */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .modal {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 300px;
+    padding: 40px 0;
+  }
 }

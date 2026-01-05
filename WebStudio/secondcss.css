@@ -306,3 +306,422 @@ a {
   flex-direction: column;
   gap: 30px;
 }
+/* адаптив */
+/* Додайте цей код в кінець вашого файлу secondcss.css */
+
+/* Медіа-запити для адаптації */
+
+/* Планшети (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Header для планшетів */
+  .header-nav {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .h1txt {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .list-first:first-of-type {
+    order: 2;
+    gap: 20px;
+  }
+
+  .list-first:last-of-type {
+    order: 3;
+    gap: 20px;
+  }
+
+  /* Hero секція для планшетів */
+  .hero {
+    margin-top: 60px;
+  }
+
+  .first-list-hero {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .btns-list-hero {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Grid для портфоліо */
+  .second-list-hero {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .second-list-hero-item {
+    width: calc(50% - 10px);
+    max-width: 350px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .h2-hero {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 10px 8px 0;
+  }
+
+  .p-hero {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 8px 10px;
+  }
+
+  /* Footer для планшетів */
+  .container-footer {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .footer-list,
+  .footer-join,
+  .footer-last {
+    width: 100%;
+    align-items: center;
+  }
+
+  .li-footer {
+    text-align: center;
+  }
+
+  .footer-join-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-footer {
+    justify-content: center;
+  }
+
+  .input-last {
+    margin-bottom: 10px;
+    width: 70%;
+  }
+}
+
+/* Мобільні пристрої (до 767px) */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  /* Header для мобільних */
+  .header-nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .h1txt {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .list-first {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .list-first:first-of-type {
+    order: 2;
+  }
+
+  .list-first:last-of-type {
+    order: 3;
+  }
+
+  .item-fisrt-list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .item-fisrt-list form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .a-item-fisrt-list {
+    font-size: 13px;
+  }
+
+  .img-header {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Hero секція для мобільних */
+  .hero {
+    margin-top: 40px;
+  }
+
+  .first-list-hero {
+    overflow-x: auto;
+    /* justify-content: flex-start; */
+    padding-bottom: 10px;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .first-list-hero-item {
+    flex-shrink: 0;
+  }
+
+  .btns-list-hero {
+    padding: 10px 20px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  /* Grid для портфоліо - 1 колонка */
+  .second-list-hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .second-list-hero-item {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .h2-hero {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 15px 12px 0;
+  }
+
+  .p-hero {
+    font-size: 16px;
+    margin: 0 12px 15px;
+  }
+
+  /* Footer для мобільних */
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+    gap: 30px;
+  }
+
+  .footer-list,
+  .footer-join,
+  .footer-last {
+    align-items: center;
+  }
+
+  .li-footer:first-child {
+    margin-bottom: 15px;
+  }
+
+  .h1txt {
+    font-size: 24px;
+  }
+
+  .adress-footer,
+  .link-to {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-join {
+    gap: 20px;
+  }
+
+  .h2-join,
+  .last-txt {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .input-last {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+  }
+
+  .btn-last {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 14px;
+  }
+  .footer-last {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Дуже маленькі екрани (до 479px) */
+@media screen and (max-width: 481px) {
+  /* Header */
+  .h1txt {
+    font-size: 20px;
+  }
+
+  .a-item-fisrt-list {
+    font-size: 12px;
+  }
+
+  /* Кнопки фільтрів */
+  .btns-list-hero {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  /* Картки портфоліо */
+  .second-list-hero-item {
+    max-width: 100%;
+  }
+
+  .h2-hero {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 12px 10px 0;
+  }
+
+  .p-hero {
+    font-size: 14px;
+    margin: 0 10px 12px;
+  }
+
+  /* Footer */
+  .h1txt {
+    font-size: 22px;
+  }
+
+  .adress-footer,
+  .link-to {
+    font-size: 13px;
+  }
+
+  .input-last {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .btn-last {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .img-join {
+    width: 24px;
+    height: 24px;
+  }
+  .first-list-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Покращення для планшетів в портретній орієнтації */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .second-list-hero {
+    justify-content: space-around;
+  }
+
+  .second-list-hero-item {
+    width: calc(50% - 15px);
+  }
+}
+
+/* Адаптація для hover ефектів на мобільних */
+@media (hover: none) and (pointer: coarse) {
+  .btns-list-hero:hover {
+    background-color: rgba(245, 244, 250, 1);
+    color: rgba(33, 33, 33, 1);
+  }
+
+  .btns-list-hero:active {
+    background-color: rgba(33, 150, 243, 1);
+    color: white;
+  }
+}
+
+/* Покращення доступності для інпутів */
+@media screen and (max-width: 767px) {
+  button,
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* Запобігає збільшенню в iOS */
+    min-height: 44px; /* Мінімальний розмір для дотику */
+  }
+
+  .btns-list-hero,
+  .btn-last {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Плавні переходи */
+.second-list-hero-item,
+.btns-list-hero,
+.footer-join-item,
+.footer-last {
+  transition: all 0.3s ease;
+}
+
+/* Ефекти при наведенні тільки для девайсів з мишею */
+@media (hover: hover) {
+  .second-list-hero-item:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+
+  .btns-list-hero:hover {
+    background-color: rgba(33, 150, 243, 1);
+    color: white;
+    transform: scale(1.05);
+  }
+}
+
+/* Покращення для карток портфоліо на великих екранах */
+@media screen and (min-width: 1024px) {
+  .second-list-hero {
+    gap: 30px;
+  }
+
+  .second-list-hero-item {
+    width: calc(33.333% - 20px);
+    margin-bottom: 30px;
+  }
+}
+
+/* Виправлення для дуже широких екранів */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
