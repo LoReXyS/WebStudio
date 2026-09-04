@@ -725,3 +725,232 @@ a {
     max-width: 1400px;
   }
 }
+
+/* animations */
+
+/* header */
+.header-nav {
+  animation: header 0.8s ease;
+}
+
+@keyframes header {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.h1txt {
+  transition: 0.3s;
+}
+
+.h1txt:hover {
+  transform: scale(1.05);
+}
+
+.a-item-fisrt-list {
+  transition: 0.3s;
+}
+
+.a-item-fisrt-list:hover {
+  color: rgba(33, 150, 243, 1);
+  transform: translateY(-2px);
+}
+
+/* hero */
+.hero {
+  animation: hero 0.8s ease;
+}
+
+@keyframes hero {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* buttons */
+.btns-list-hero {
+  transition: 0.3s;
+}
+
+.btns-list-hero:hover {
+  background-color: rgba(33, 150, 243, 1);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btns-list-hero:active {
+  transform: scale(0.95);
+}
+
+/* portfolio */
+.second-list-hero-item {
+  transition: 0.3s;
+  animation: portfolio 0.7s ease both;
+}
+
+.second-list-hero-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.second-list-hero-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.second-list-hero-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.second-list-hero-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.second-list-hero-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.second-list-hero-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+@keyframes portfolio {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* portfolio hover */
+.second-list-hero-item:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-img {
+  transition: 0.4s;
+}
+
+.second-list-hero-item:hover .hero-img {
+  transform: scale(1.03);
+}
+
+/* portfolio text */
+.h2-hero {
+  transition: 0.3s;
+}
+
+.second-list-hero-item:hover .h2-hero {
+  color: rgba(33, 150, 243, 1);
+}
+
+.p-hero {
+  transition: 0.3s;
+}
+
+/* footer */
+.footer {
+  animation: footer 0.8s ease;
+}
+
+@keyframes footer {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.link-to {
+  transition: 0.3s;
+}
+
+.link-to:hover {
+  color: rgba(33, 150, 243, 1);
+  transform: translateX(3px);
+}
+
+.input-last {
+  transition: 0.3s;
+}
+
+.input-last:focus {
+  outline: none;
+  border-color: rgba(33, 150, 243, 1);
+  box-shadow: 0px 0px 5px rgba(33, 150, 243, 0.3);
+}
+
+.btn-last {
+  transition: 0.3s;
+}
+
+.btn-last:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 12px rgba(33, 150, 243, 0.3);
+}
+
+.btn-last:active {
+  transform: scale(0.95);
+}
+
+/* footer logo */
+.nextH1txt2 {
+  transition: 0.3s;
+}
+
+.nextH1txt2:hover {
+  color: rgba(33, 150, 243, 1);
+}
+
+/* social icons */
+.img-join {
+  transition: 0.3s;
+}
+
+.img-join:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .second-list-hero-item:hover {
+    transform: translateY(-3px);
+  }
+
+  .btns-list-hero:active {
+    transform: scale(0.95);
+  }
+}
+
+/* плавна поява сторінки */
+body {
+  animation: body 0.5s ease;
+}
+
+@keyframes body {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
